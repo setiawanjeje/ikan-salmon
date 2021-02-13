@@ -1,6 +1,6 @@
 ## Petunjuk instalasi
 
-1. `git clone xxx`
+1. `git clone git@github.com:setiawanjeje/ikan-salmon.git`
 2. `cd ikan-salmon`
 3. `yarn`
 
