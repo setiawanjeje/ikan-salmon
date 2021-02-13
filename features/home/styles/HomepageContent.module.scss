@@ -1,0 +1,96 @@
+@import "../../../styles/variables.scss";
+
+.numeric {
+  font-family: monospace, monospace;
+  text-align: right;
+}
+
+.container {
+  margin: 0 auto;
+
+  padding: 0 $spacing_m;
+  @include tabletAndUp {
+    width: 95%;
+  }
+  @include desktopAndUp {
+    width: 90%;
+    max-width: 1100px;
+  }
+}
+
+.content {
+  padding: $spacing_xl 0;
+}
+
+.mainHeading {
+  padding: $spacing_m 0;
+  background-color: $tintPrimary;
+  color: $lightPrimary;
+
+  h1 {
+    color: $lightPrimary;
+  }
+}
+
+.textRight {
+  text-align: right;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.filterContainer {
+  margin-bottom: $spacing_m;
+}
+
+.addButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: $spacing_m;
+}
+
+.modal {
+  border: 1px solid red;
+}
+
+.modalTitle {
+  margin-bottom: $spacing_l;
+}
+
+.pagination {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  border-radius: 0.25rem;
+  margin-top: $spacing_m;
+
+  li a {
+    padding: $spacing_xs $spacing_s;
+    border: 1px solid $tintPrimary;
+    border-radius: $borderRadius;
+    font-weight: 500;
+  }
+
+  li:not(:last-child) {
+    margin-right: $spacing_m;
+  }
+}
+
+li.paginationActive a[role="button"] {
+  background-color: $tintPrimary;
+  color: $lightPrimary;
+}
+
+.notFound {
+  font-size: 0.8rem;
+  color: $darkSecondary;
+}
+
+.hideCellOnMobile {
+  display: none;
+
+  @include tabletAndUp {
+    display: table-cell;
+  }
+}

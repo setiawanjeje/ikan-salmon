@@ -1,0 +1,36 @@
+$darkPrimary: #202529;
+$darkSecondary: #4f575c;
+$darkSubtle: #e7ecf0;
+
+$lightPrimary: #fff;
+
+$tintPrimary: #006fbe;
+$tintSecondary: #005a9b;
+$tintLight: #c6e7ff;
+
+$spacing_xs: 4px;
+$spacing_s: 8px;
+$spacing_m: 16px;
+$spacing_l: 20px;
+$spacing_xl: 24px;
+
+$borderRadius: 4px;
+
+$fontsize_mobile: 14px;
+$fontsize_tablet: 16px;
+$fontsize_desktop: 16px;
+
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin tabletAndUp {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktopAndUp {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}

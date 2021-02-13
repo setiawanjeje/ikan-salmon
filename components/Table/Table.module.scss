@@ -1,0 +1,35 @@
+@import "../../styles/variables.scss";
+
+.tableWrapper {
+  overflow: auto;
+}
+
+.table {
+  width: 100%;
+
+  thead th {
+    position: sticky;
+    top: 0;
+  }
+
+  th {
+    text-align: center;
+    background-color: $darkSubtle;
+  }
+
+  th,
+  td {
+    padding: $spacing_xs;
+  }
+
+  tr:nth-child(even) {
+    background-color: $darkSubtle;
+  }
+
+  @include tabletAndUp {
+    th,
+    td {
+      padding: $spacing_s;
+    }
+  }
+}

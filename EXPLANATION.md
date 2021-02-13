@@ -1,0 +1,7 @@
+- This aplication is a responsive website that responsive to browser width.
+- The "Last Modified" row is intentionally hidden in mobile view because people tend to just "browse" or "skimming the information" in mobile web, while in desktop, people tend to see the details of the data and do action more in desktop
+- I tend to use bahasa for the copy because this is intended for Indonesian people.
+- For number data, I use monospace font and make it right aligned because it is easier to skim the number that way
+- It would be great if select component on json-reactform can receive async options (so the Kota filter will be based on chosen Provinsi)
+- Also, It would be great if the component styling can be modified, I was thinking if the filter and sort layout looks like this https://dribbble.com/shots/6827054-Data-website-Filters-sorting-data-table, because it could save more vertical space
+- I apologize that I use some external components (like modal, pagination, toast), because it's just hassle to create a complex component from scratch
